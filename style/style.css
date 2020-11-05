@@ -4,7 +4,9 @@
 body {
 	background-color: #E6EFF5;
 	max-width: 1440px;
-	max-height: 800px;
+	height: 800px;
+	display: flex;
+
 }
 
 
@@ -15,7 +17,6 @@ body {
 	height: 475px;
 	border-radius: 8px;
 	background-color: white;
-	vertical-align: center;
 	margin: auto;
 	box-shadow: 0 15px 30px 0 rgba(0, 81, 171, 0.15);
 	display: grid;
@@ -129,6 +130,12 @@ span.price {
 }
 
 footer {
+	height: 30px;
+	width: 450px;
+	vertical-align: bottom;
+}
+.attribution {
+	margin: 25px;
 	text-align: center;
 }
 
@@ -219,7 +226,7 @@ footer {
 		margin-left: 20px;
 	}
 	
-	footer {
+	.attribution {
 		width: 311px;
 		margin: auto;
 	}
