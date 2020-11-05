@@ -129,16 +129,6 @@ span.price {
 	opacity: 0.75;
 }
 
-footer {
-	height: 30px;
-	width: 450px;
-	vertical-align: bottom;
-}
-.attribution {
-	margin: 25px;
-	text-align: center;
-}
-
 @media screen and (max-width: 375px) {
 	body {
 		max-width: 375px;
@@ -226,9 +216,5 @@ footer {
 		margin-left: 20px;
 	}
 	
-	.attribution {
-		width: 311px;
-		margin: auto;
-	}
 }
 
