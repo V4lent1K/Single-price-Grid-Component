@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #E6EFF5;
+	max-width: 1440px;
+	max-height: 800px;
+}
+
+
+.main-container {
+	font-family: 'Karla';
+	font-size: 16px;
+	width: 635px;
+	height: 475px;
+	border-radius: 8px;
+	background-color: white;
+	margin: auto;
+	box-shadow: 0 15px 30px 0 rgba(0, 81, 171, 0.15);
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(0px, auto);
+    grid-template-areas:
+    "grid_1 grid_1"
+    "grid_2 grid_3";   
+}
+
+.box-1{
+	max-height: 155px;
+	padding-left: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	grid-area: grid_1;
+}
+
+
+h1 {
+	color: #2AB3B1;
+	font-size: 24px;
+	width: 324px;
+	height: 28px;
+}
+
+.h2-primary {
+	color:  hsl(71, 73%, 54%);
+	font-size: 18px;
+	width: 367px; 
+	height: 22px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.p-primary {
+	color: #9AA7BE;
+	width: 555px;
+	height: 52px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+
+.box-2 {
+	background-color: #2AB3B1;
+	padding-left: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border-radius: 0 0 0 8px;
+	grid-area: grid_2;
+}
+
+.h2-secondary {
+	color: white;
+	font-size: 18px;
+}
+
+.p-price {
+	color: white;
+	width: 155px;
+	height: 43px;
+	margin-bottom: 0;
+}
+
+span.price {
+	font-size: 32px;
+	color: white;
+	vertical-align: -0.4em;
+}
+
+.opacity {
+	opacity: 0.5;
+	padding-left: 15px;
+}
+
+.p-2 {
+	width: 240px; 
+	color: white;
+	height: 26px;
+	margin-bottom: 27px;
+	margin-top: 0;
+}
+
+.sign-up {
+	background-color: #C0DF33;
+	margin-bottom: 40px;
+	max-width: 237px;
+	height: 48px; 
+	text-decoration: none;
+	color: white;
+	padding: 15px 95px;
+	border-radius: 5px;
+	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.10);
+}
+
+.box-3 {
+	background-color: #2AB3B1;
+	opacity: 0.85;
+	padding: 40px;
+	border-radius: 0 0 8px 0;
+	grid-area: grid_3;
+}
+
+.p-3 {
+	width: 238px; 
+	height: 140px;
+	color: white;
+	margin-bottom: 0px;
+	opacity: 0.75;
+}
+
+footer {
+	text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+	body {
+		max-width: 375px;
+		max-height: 856px;
+	}
+	
+	.main-container {
+		width: 311px;
+		height: 722px;
+		border-radius: 5px;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-auto-rows: minmax(1px, auto);
+		grid-template-areas:
+		"grid_1"
+		"grid_2"
+		"grid_3";   
+	}
+	
+	.box-1{
+		padding-left: 20px;
+		padding-top: 30px;
+		padding-bottom: 60px;
+		grid-area: grid_1;
+	}
+	
+	h1 {
+		font-size: 20px;
+		width: 263px;
+		height: 23px;
+	}
+	
+	.h2-primary {
+		font-size: 15px;
+		width: 263px; 
+		height: 40px;
+	}
+
+	.p-primary {
+		font-size: 14px;
+		width: 263px;
+		height: 104px;
+		padding-top: 15px;
+		padding-bottom: 40px;
+	}
+	
+	.box-2 {
+		max-width: 311px;
+		padding-left: 0px;
+		padding-top: 20px;
+		background-color: #2AB3B1;
+		border-radius: 0 0 0 0;
+		grid-area: grid_2;
+	}
+	
+	.h2-secondary {
+		padding-left: 20px;
+	}
+	
+	.p-price {
+		padding-left: 20px;
+	}
+	
+	.p-2 {
+		padding-left: 20px;
+	}
+
+	.sign-up {
+		margin-left: 20px;
+		margin-bottom: 40px;
+		max-width: 237px;
+		height: 48px; 
+		padding: 15px 107px;
+	}
+
+	.box-3 {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+		border-radius: 0 0 5px 5px;
+		grid-area: grid_3;
+	}
+
+	.p-3 {
+		margin-left: 20px;
+	}
+	
+	footer {
+		width: 311px;
+		margin: auto;
+	}
+}
+
